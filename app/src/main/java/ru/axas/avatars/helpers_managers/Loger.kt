@@ -1,11 +1,10 @@
-package ru.axas.avatars.presentation.helpers
+package ru.axas.avatars.helpers_managers
 
 import android.util.Log
 
 object Loger {
     private val LOG = "myLog"
     private val turnOn = true // отключить логи по всему приложению
-
 
     fun log(message: Any) {
         if (turnOn) {

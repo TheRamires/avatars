@@ -20,6 +20,7 @@ class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding
+        baseActivityInit()
 
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
 
