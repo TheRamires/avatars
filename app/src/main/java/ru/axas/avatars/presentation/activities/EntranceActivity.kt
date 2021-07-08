@@ -7,6 +7,7 @@ import ru.axas.avatars.R
 import ru.axas.avatars.databinding.ActivityEntranceBinding
 import ru.axas.avatars.helpers_managers.ToastyManager
 import javax.inject.Inject
+
 class EntranceActivity : BaseActivity() {
     val binding by lazy { DataBindingUtil.setContentView<ActivityEntranceBinding>(this,
         R.layout.activity_entrance

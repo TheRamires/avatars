@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Normal.Button" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/corner_15</item>
+        <item name="cornerSizeBottomRight">@dimen/corner_15</item>
+        <item name="cornerSizeTopLeft">@dimen/corner_15</item>
+        <item name="cornerSizeBottomLeft">@dimen/corner_15</item>
+    </style>
+
+</resources>

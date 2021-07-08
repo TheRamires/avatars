@@ -14,7 +14,7 @@ android {
 
     defaultConfig {
         applicationId "ru.axas.avatars"
-        minSdkVersion 17
+        minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -39,6 +39,12 @@ android {
         main{
             res{
                 srcDir 'src/main/res_entrance'
+                srcDir 'src/main/res_splash'
+                srcDir 'src/main/res_home'
+                srcDir 'src/main/res_find'
+                srcDir 'src/main/res_chat'
+                srcDir 'src/main/res_finance'
+                srcDir 'src/main/res_profile'
             }
         }
     }
@@ -84,4 +90,7 @@ dependencies {
     //hilt
     implementation "com.google.dagger:hilt-android:$hiltVersion"
     kapt "com.google.dagger:hilt-android-compiler:$hiltVersion"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$view_model"
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    implementation 'androidx.fragment:fragment-ktx:1.3.5'
 }
