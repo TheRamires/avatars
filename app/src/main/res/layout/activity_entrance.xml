@@ -15,14 +15,15 @@
                 android:theme="@style/Theme.Avatars.AppBarOverlay">
 
                 <androidx.appcompat.widget.Toolbar
+                    app:navigationIcon="@drawable/back_stack"
+                    app:titleTextColor="@color/black"
                     android:id="@+id/toolbar"
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
-                    android:background="?attr/colorPrimary"
+                    android:background="@color/white"
                     app:popupTheme="@style/Theme.Avatars.PopupOverlay" />
 
             </com.google.android.material.appbar.AppBarLayout>
-
 
             <include layout="@layout/entrance_contant" />
 

@@ -9,6 +9,7 @@ import ru.axas.avatars.presentation.activities.base
 
 abstract class BaseFragment: Fragment() {
     abstract val TAG_LOG : String
+    val supportActionBar by lazy { (activity as AppCompatActivity).supportActionBar}
 
     fun showProgressBar() = base { progressBarStatus(View.VISIBLE) }
 
@@ -23,6 +24,4 @@ abstract class BaseFragment: Fragment() {
     inline fun base(block: BaseActivity.() -> Unit) {
         activity.base (block)
     }
-
-    val actionBar: ActionBar =(activity as AppCompatActivity).supportActionBar!!
 }

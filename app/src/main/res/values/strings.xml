@@ -28,4 +28,5 @@
     <string name="registr_text_pin">Придумайте пин-код для входа в приложение</string>
     <string name="registr_text_pin_enter">Введите пин-код</string>
     <string name="registr_forgot_pin">Забыли пин-код?</string>
+    <string name="regist_text_registration">Регистрация</string>
 </resources>

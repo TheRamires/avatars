@@ -48,22 +48,6 @@ android {
             }
         }
     }
-   /*sourceSets {
-        main {
-            res.srcDirs =
-                    [
-                            'src/main/res/layouts/activities',
-                            'src/main/res/layouts/chats',
-                            'src/main/res/layouts/finance',
-                            'src/main/res/layouts/find',
-                            'src/main/res/layouts/home',
-                            'src/main/res/layouts/profile',
-                            'src/main/res/layouts/entrance',
-                            'src/main/res/layouts',
-                            'src/main/res'
-                    ]
-        }
-    } */
 }
 
 dependencies {
