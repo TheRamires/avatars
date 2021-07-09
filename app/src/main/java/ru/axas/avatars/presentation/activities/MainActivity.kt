@@ -9,7 +9,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import ru.axas.avatars.R
 import ru.axas.avatars.databinding.ActivityMainBinding
-
+//Ramires
 class MainActivity : BaseActivity() {
     val binding by lazy { DataBindingUtil.setContentView<ActivityMainBinding>(this,
         R.layout.activity_main
