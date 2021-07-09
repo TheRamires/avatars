@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".presentation.entrance_ui.ui.RegistrationFragment">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_view_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="40dp"
+            android:text="@string/registration_text_01"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_view_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/registration_text_02"
+            android:textColor="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_01" />
+
+        <EditText
+            android:layout_marginTop="30dp"
+            android:id="@+id/edit_text_01"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/views_height"
+            android:layout_marginHorizontal="@dimen/button_horisontal_margin"
+            android:background="@drawable/gray_corners_general"
+            android:foregroundTint="@color/red_original"
+            android:hint="@string/registr_text_name"
+            android:inputType="phone"
+            android:padding="@dimen/edit_text_padding"
+            android:textColorHint="@color/gray_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_02" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/edit_text_02"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/views_height"
+            android:layout_marginHorizontal="@dimen/button_horisontal_margin"
+            android:background="@drawable/gray_corners_general"
+            android:foregroundTint="@color/red_original"
+            android:hint="@string/registr_text_postname"
+            android:inputType="phone"
+            android:padding="@dimen/edit_text_padding"
+            android:textColorHint="@color/gray_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_01" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/text_view_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registr_text_gender"
+            android:textColor="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_02" />
+
+        <Spinner
+            android:layout_marginTop="5dp"
+            android:id="@+id/spinner_gender"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/views_height"
+            android:layout_marginHorizontal="@dimen/button_horisontal_margin"
+            android:background="@drawable/gray_corners_general"
+            android:gravity="start|center_vertical"
+            android:padding="@dimen/edit_text_padding"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_03" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/text_view_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registr_text_date"
+            android:textColor="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_gender" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="5dp"
+            android:id="@+id/date_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/views_height"
+            android:layout_marginHorizontal="@dimen/button_horisontal_margin"
+            android:background="@drawable/gray_corners_general"
+            android:drawableEnd="@drawable/calendar"
+            android:gravity="start|center_vertical"
+            android:paddingHorizontal="@dimen/edit_text_padding"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_04" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/text_view_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registr_text_city_choose"
+            android:textColor="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/date_button" />
+
+        <Spinner
+            android:layout_marginTop="5dp"
+            android:id="@+id/spinner_city"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/views_height"
+            android:layout_marginHorizontal="@dimen/button_horisontal_margin"
+            android:background="@drawable/gray_corners_general"
+            android:gravity="start|center_vertical"
+            android:padding="@dimen/edit_text_padding"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_05" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/next_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginHorizontal="@dimen/button_horisontal_margin"
+            android:elevation="10dp"
+            android:text="@string/next"
+            android:theme="@style/Normal.Button"
+            android:translationZ="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_city"
+            android:layout_marginBottom="30dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

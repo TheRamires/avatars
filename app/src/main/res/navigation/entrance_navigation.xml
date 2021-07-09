@@ -3,11 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/entrance_navigation"
-    app:startDestination="@id/authorizationFragment">
+    app:startDestination="@id/pinCodeEnterFragment">
 
     <fragment
         android:id="@+id/authorizationFragment"
         android:name="ru.axas.avatars.presentation.entrance_ui.ui.AuthorizationFragment"
         android:label="fragment_authorization"
         tools:layout="@layout/fragment_authorization" />
+    <fragment
+        android:id="@+id/pinCodeEnterFragment"
+        android:name="ru.axas.avatars.presentation.entrance_ui.ui.PinCodeEnterFragment"
+        android:label="PinCodeEnterFragment" />
 </navigation>
