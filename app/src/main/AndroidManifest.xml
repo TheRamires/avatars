@@ -14,13 +14,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Avatars">
         <activity
-            android:theme="@style/Theme.Avatars.NoActionBar"
             android:name=".presentation.activities.SplashActivity"
             android:screenOrientation="portrait">
         </activity>
         <activity
             android:windowSoftInputMode="adjustResize"
-            android:theme="@style/Theme.Avatars.NoActionBar"
             android:name=".presentation.activities.EntranceActivity"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -30,7 +28,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:theme="@style/Theme.Avatars.NoActionBar"
             android:name=".presentation.activities.MainActivity"
             android:screenOrientation="portrait">
 

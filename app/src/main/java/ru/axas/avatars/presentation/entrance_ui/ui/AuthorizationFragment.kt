@@ -9,6 +9,8 @@ import android.widget.Button
 import android.widget.CompoundButton
 import android.widget.RadioGroup
 import android.widget.ToggleButton
+import androidx.appcompat.app.ActionBar
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.fragment.app.viewModels
 import com.google.android.material.button.MaterialButtonToggleGroup
@@ -18,6 +20,7 @@ import ru.axas.avatars.R
 import ru.axas.avatars.databinding.FragmentAuthorizationBinding
 import ru.axas.avatars.presentation.BaseFragment
 import ru.axas.avatars.presentation.ENTRANCE
+import ru.axas.avatars.presentation.activities.BaseActivity
 import ru.axas.avatars.presentation.entrance_ui.view_models.AuthorizViewModel
 @AndroidEntryPoint
 class AuthorizationFragment : BaseFragment() , CompoundButton.OnCheckedChangeListener {
@@ -29,6 +32,11 @@ class AuthorizationFragment : BaseFragment() , CompoundButton.OnCheckedChangeLis
     val checkOn  by lazy{AppCompatResources.getDrawable(requireContext(),R.drawable.check_on)?.apply {
         setBounds(0, 0, 75, 75) }}
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -37,6 +45,8 @@ class AuthorizationFragment : BaseFragment() , CompoundButton.OnCheckedChangeLis
 
         binding.toggle01.init()
         binding.toggle02.init()
+
+
 
         return binding.root
     }

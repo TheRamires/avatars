@@ -1,6 +1,8 @@
 package ru.axas.avatars.presentation
 
 import android.view.View
+import androidx.appcompat.app.ActionBar
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import ru.axas.avatars.presentation.activities.BaseActivity
 import ru.axas.avatars.presentation.activities.base
@@ -21,4 +23,6 @@ abstract class BaseFragment: Fragment() {
     inline fun base(block: BaseActivity.() -> Unit) {
         activity.base (block)
     }
+
+    val actionBar: ActionBar =(activity as AppCompatActivity).supportActionBar!!
 }

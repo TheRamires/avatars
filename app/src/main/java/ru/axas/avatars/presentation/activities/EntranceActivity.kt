@@ -2,6 +2,7 @@ package ru.axas.avatars.presentation.activities
 
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Toolbar
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.NavController
@@ -26,16 +27,22 @@ class EntranceActivity : BaseActivity() {
         binding
         baseActivityInit()
 
+        setSupportActionBar(findViewById(R.id.toolbar))
+        supportActionBar?.apply {
+            title = ""
+        }
+/*
         val backIcon= AppCompatResources.getDrawable(this,R.drawable.back_stack)
-        val toolbar = binding.toolbar
-        toolbar.navigationIcon = backIcon
-        setSupportActionBar(toolbar)
+        val toolbar : androidx.appcompat.widget.Toolbar = findViewById(R.id.toolbar)
+        //toolbar.navigationIcon = backIcon
+        setSupportActionBar(findViewById(R.id.toolbar))
 
         supportActionBar?.apply {
-            title=resources.getString(R.string.registration)
-            setDisplayHomeAsUpEnabled(true)
-            setDisplayShowHomeEnabled(true)
-        }
+            //setDisplayHomeAsUpEnabled(true)
+            //setDisplayShowHomeEnabled(true)
+            //title=resources.getString(R.string.registration)
+
+        }*/
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
