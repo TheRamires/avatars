@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Avatars</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_tutorial_01">Lorem ipsum dolor sit amet</string>
+    <string name="text_tutorial_02"> consectetur adipiscing elit. Gravida consectetur ultricies sit dictum.</string>
+    <string name="welcome">welcome</string>
+    <string name="avatars">avatars</string>
+    <string name="come_in">Войти</string>
+    <string name="agree">Принимаю условия политики конфиденциальности</string>
+    <string name="agree_02">Согласен на обработку персональных данных</string>
+    <string name="registration">Регистрация</string>
+    <string name="your_number">На ваш номер</string>
+    <string name="sms_text">Отправлен код подтверждения</string>
+    <string name="sms_text_01">Введите SMS-код</string>
+    <string name="sms_text_02">Не пришел код?</string>
+    <string name="sms_text_03">Отправить еще раз</string>
+    <string name="next">Далее</string>
+    <string name="registration_text_01">Для вывода средств из социальной сети необходимо указать свои реальные имя и фамилию</string>
+    <string name="registration_text_02">(данные возможно изменить в дальнейшем)</string>
+    <string name="registr_text_name">Имя</string>
+    <string name="registr_text_postname">Фамилия</string>
+    <string name="registr_text_gender">Ваш пол</string>
+    <string name="registr_text_date">Дата вашего рождения</string>
+    <string name="registr_text_city_choose">Город, в котором проживаете</string>
+    <string name="registr_text_photo_add">Добавить фото</string>
+    <string name="skip">Пропустить</string>
+    <string name="registr_text_pin">Придумайте пин-код для входа в приложение</string>
+    <string name="registr_text_pin_enter">Введите пин-код</string>
+    <string name="registr_forgot_pin">Забыли пин-код?</string>
+</resources>

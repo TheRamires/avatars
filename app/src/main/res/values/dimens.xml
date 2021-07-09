@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="views_height">60dp</dimen>
+    <dimen name="button_height">70dp</dimen>
+    <dimen name="button_horisontal_margin">15dp</dimen>
+    <dimen name="edit_text_padding">20dp</dimen>
+    <dimen name="corner_15">15dp</dimen>
+
+</resources>

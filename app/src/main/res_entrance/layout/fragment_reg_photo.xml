@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.entrance_ui.ui.RegPhotoFragment">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:paddingVertical="15dp"
+            android:id="@+id/text_view_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="@string/registr_text_photo_add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/photo_card_view"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_01"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:background="@color/gray"
+            android:elevation="10dp"
+            app:cardCornerRadius="90dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/camera"
+                android:id="@+id/roundedImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:scaleType="centerCrop"
+                android:contentDescription="photo" />
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/photo_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:scaleType="centerCrop"
+                android:contentDescription="photo" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_marginTop="50dp"
+            android:id="@+id/next_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginHorizontal="@dimen/button_horisontal_margin"
+            android:elevation="10dp"
+            android:text="@string/next"
+            android:theme="@style/Normal.Button"
+            android:translationZ="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/photo_card_view"
+            android:layout_marginBottom="30dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@color/white"
+            android:layout_marginTop="5dp"
+            android:id="@+id/skip_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/views_height"
+            android:layout_marginHorizontal="@dimen/button_horisontal_margin"
+            android:elevation="10dp"
+            android:text="@string/skip"
+            android:theme="@style/Normal.Button"
+            android:translationZ="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/next_btn"
+            android:layout_marginBottom="30dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
